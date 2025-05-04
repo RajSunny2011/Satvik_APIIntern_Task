@@ -69,18 +69,25 @@ _Submit a patient ID and retrieve diagnosis results._
 
 ## Setup
 1.  Clone repo
+
 2.  Install dependencies:
 
-`pip install flask requests`
+```
+pip install flask requests
+```
 
 3.  Run the API:
 
-`python main.py`
+```
+python main.py
+```
 
 4. Test the API:
 
-Use the given python script
-`python apitest.py`
+Use the given python script:
+```
+python apitest.py
+```
 
 *or* use commands
 
