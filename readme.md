@@ -21,7 +21,20 @@ _Submit a patient ID and retrieve diagnosis results._
 
 **Request Body:**
 
-`{"name": "Mr. X", "diagnosis": "Asthma", "prescription": "Inhaler", "doctor": "Dr. K", "recommendations": ["Use inhaler", "Avoid allergens"]}`
+```
+{
+    "P123": {
+        "name": "Mr. X",
+        "diagnosis": "Asthma",
+        "prescription": "Inhaler",
+        "doctor": "Dr. K",
+        "recommendations": [
+            "Use inhaler",
+            "Avoid allergens"
+        ]
+    }
+}
+```
 
 **Response:**
 
@@ -44,7 +57,9 @@ _Submit a patient ID and retrieve diagnosis results._
 
 **Response:**
 
-`{'diagnosis': 'Asthma', 'doctor': 'Dr. K', 'name': 'Mr. X', 'patient_id': 'P123', 'prescription': 'Inhaler', 'recommendations': ['Use inhaler', 'Avoid allergens']}`
+```
+{'diagnosis': 'Asthma', 'doctor': 'Dr. K', 'name': 'Mr. X', 'patient_id': 'P123', 'prescription': 'Inhaler', 'recommendations': ['Use inhaler', 'Avoid allergens']}
+```
 
 **Status Codes:**
 
@@ -70,9 +85,13 @@ Use the given python script
 *or* use commands
 
 For Post:
-`curl -X POST http://localhost:5000/submit/P123 -H "Content-Type: application/json" -H "Authorization: supersecretcode" -d '{"name":"Mr. X","diagnosis":"Asthma","prescription":"Inhaler","doctor":"Dr. K","recommendations":["Use inhaler","Avoid allergens"]}'`
+```
+curl -X POST http://localhost:5000/submit/P123 -H "Content-Type: application/json" -H "Authorization: supersecretcode" -d '{"name":"Mr. X","diagnosis":"Asthma","prescription":"Inhaler","doctor":"Dr. K","recommendations":["Use inhaler","Avoid allergens"]}'
+```
 
 For Get:
-`curl -X GET http://localhost:5000/diagnosis/P123 -H "Authorization: supersecretcode"`
+```
+curl -X GET http://localhost:5000/diagnosis/P123 -H "Authorization: supersecretcode"
+```
 
 
