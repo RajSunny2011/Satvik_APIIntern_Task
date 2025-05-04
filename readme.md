@@ -11,7 +11,7 @@ _Submit a patient ID and retrieve diagnosis results._
 
 ## API Endpoints
 
-### 1. `POST /submit/<patient_id`
+### 1. `POST /submit/<patient_id>`
 
 **Description:** Submit diagnosis data for a given patient ID.
 
@@ -47,7 +47,7 @@ _Submit a patient ID and retrieve diagnosis results._
 -   `401 Unauthorized` – If token is invalid
 
 
-### 2. `GET /diagnosis/<patient_id`
+### 2. `GET /diagnosis/<patient_id>`
 
 **Description:** Retrieve stored diagnosis data for a given patient.
 
