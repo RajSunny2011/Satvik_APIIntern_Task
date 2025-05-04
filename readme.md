@@ -71,6 +71,7 @@ Use the given python script
 
 For Post:
 `curl -X POST http://localhost:5000/submit/P123 -H "Content-Type: application/json" -H "Authorization: supersecretcode" -d '{"name":"Mr. X","diagnosis":"Asthma","prescription":"Inhaler","doctor":"Dr. K","recommendations":["Use inhaler","Avoid allergens"]}'`
+
 For Get:
 `curl -X GET http://localhost:5000/diagnosis/P123 -H "Authorization: supersecretcode"`
 
